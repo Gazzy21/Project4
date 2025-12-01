@@ -1,4 +1,7 @@
+package main.models;
+
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Room {
     private int roomID;

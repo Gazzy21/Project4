@@ -1,8 +1,10 @@
-class GameEntity {
-    private String name;
-    private String description;
+package main.models;
 
-    public GameEntity(String name, String description, int level) {
+public class GameEntity {
+    String name;
+    String description;
+
+    public GameEntity(String name, String description) {
         this.name = name;
         this.description = description;
     }

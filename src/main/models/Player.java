@@ -1,15 +1,17 @@
+package main.models;
+
 import java.util.ArrayList;
 
 public class Player extends Creature {
     ArrayList<Item> inventory;
 
-    addItem(Item item) {
+    void addItem(Item item) {
         inventory.add(item);
     }
-    dropItem(Item item) {
+    void dropItem(Item item) {
         inventory.remove(item);
     }
-    showInventory() {
+    ArrayList<Item> showInventory() {
         return inventory;
     }
 }
