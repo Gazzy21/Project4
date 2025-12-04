@@ -1,8 +1,8 @@
 package main.models;
 
 public class GameEntity {
-    String name;
-    String description;
+    protected String name;
+    protected String description;
 
     public GameEntity(String name, String description) {
         this.name = name;

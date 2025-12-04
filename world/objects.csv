@@ -1,0 +1,5 @@
+type,name,description,location_id,value
+KEY,Rusty Key,"An old, rusty key.",1,101
+WEAPON,Iron Sword,"A simple sword.",1,8
+POTION,Health Potion,"A bubbling red vial.",2,20
+MONSTER,Goblin,"A small, angry goblin with 15HP.",3,5

@@ -1,0 +1,5 @@
+id,name,description,north,south,east,west
+1,Forest Clearing,"A quiet clearing. Paths lead north and east.",2,-1,3,-1
+2,Deep Woods,"It is dark here. A path leads south.",-1,1,-1,-1
+3,Cave Entrance,"A dark cave looms to the east. A path leads west.",-1,-1,4,1
+4,Small Cavern,"The cave is small and damp. It smells of... goblins.",-1,-1,-1,3
