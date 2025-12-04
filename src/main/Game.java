@@ -126,7 +126,7 @@ public class Game {
                 case "look":
                     // STUDENT-TODO: Get the player's current room and
                     // print its full description.
-                    System.out.println("STUDENT-TODO: Implement 'look'");
+                    System.out.println(player.getCurrentRoom().getFullDescription());
                     break;
                 case "go":
                     // STUDENT-TODO: Implement 'go'
@@ -146,9 +146,30 @@ public class Game {
                         System.out.println("Go where?");
                         break;
                     }
+                    Room currentRoom = player.getCurrentRoom();
+                        HashMap<String, Integer> exits = currentRoom.getExits();
 
-                    System.out.println("STUDENT-TODO: Implement 'go " + argument + "'");
-                    break;
+                        if (!exits.containsKey(argument)) {
+                            System.out.println("You can't go " + argument + ".");
+                            break;
+                        }
+
+                        int nextRoomId = exits.get(argument);
+                        if (nextRoomId == -1) {
+                            System.out.println("There is no path to the " + argument + ".");
+                            break;
+                        }
+
+                        Room nextRoom = allRooms.get(nextRoomId);
+                        if (nextRoom == null) {
+                            System.out.println("You can't go " + argument + ".");
+                            break;
+                        }
+
+                        System.out.println("You walk " + argument + ".");
+                        player.setCurrentRoom(nextRoom);
+                        System.out.println(nextRoom.getFullDescription());.out.println("STUDENT-TODO: Implement 'go " + argument + "'");
+                        break;
                 case "get":
                 case "take":
                     // STUDENT-TODO: Implement 'get'
